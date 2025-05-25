@@ -32,8 +32,20 @@ body {
 .card {
   transition: background-color 0.3s, color 0.3s;
 }
-.carousel-inner{
-  min-height: 40rem;
+.cardsTabs{
+  padding: 1rem;
+}
+.carousel-inner {
+  min-height: 640px; 
+  max-height: 640px;
+}
+
+.carousel-item img {
+  max-height: 440px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  display: block;
 }
   .carousel-control-prev,
 .carousel-control-next {
@@ -76,6 +88,7 @@ p.lead{
   background: linear-gradient(180deg, #0d6efd 0%, #198754 100%);
   border-radius: 2px;
 }
+
 @media (max-width: 767px) {
   .diagram-divider {
     width: 60%;
