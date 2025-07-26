@@ -275,3 +275,62 @@ ul.contactList li a{
     font-size: 0.85rem;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Header */
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  /* Navbar */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* Carrusel de proyectos */
+  .carousel-item .row > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-body {
+    padding: 1.2rem;
+  }
+  .carousel-inner{
+    max-height: max-content;
+  }
+
+  /* Secciones */
+  section {
+    padding: 3rem 2rem;
+  }
+
+  /* Contacto y footer */
+  .contactList li {
+    font-size: 1rem;
+  }
+  .cvs{
+    width: 45%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
