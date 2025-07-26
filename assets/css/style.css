@@ -129,6 +129,13 @@ p.lead{
 .cvs a.btn-secondary:hover{
   color: #ffff;
 }
+ul.contactList li{
+  text-decoration: none;
+  list-style-type: none;
+}
+ul.contactList li a{
+  text-decoration: none;
+}
 
 /* Modo claro pastel */
 [data-bs-theme="light"] .lead{
@@ -167,16 +174,6 @@ p.lead{
 [data-bs-theme="light"] p {
   color: #282f35;
 }
-/* [data-bs-theme="light"] .navbar .nav-link,
-[data-bs-theme="light"] .navbar .navbar-brand {
-  color: #333 !important;
-  font-weight: 600;
-} */
-
-/* [data-bs-theme="light"] .headerContainer {
-  background: linear-gradient(135deg, #f9c6d3, #aee6f9, #e3d7f3, #fff3b0);
-  color: #333;
-} */
 
 [data-bs-theme="light"] .card {
   background-color: #ffffff !important;
@@ -225,21 +222,56 @@ p.lead{
 
 
 @media (max-width: 767px) {
+  .headerContainer .container{
+    width: 100%;
+  }
   .diagram-divider {
     width: 60%;
     height: 4px;
     margin: 2rem auto;
     background: linear-gradient(90deg, #0d6efd 0%, #198754 100%);
   }
-}
-.contactList li{
-  list-style: none;
-}
-.contactList li a{
-  text-decoration: none;
-  color: black;
-}
-.contactList li a:hover{
-  text-decoration: none;
-  color: #007bff;
+  .contactList li{
+    list-style: none;
+  }
+  .contactList li a{
+    text-decoration: none;
+    color: black;
+  }
+  .contactList li a:hover{
+    text-decoration: none;
+    color: #007bff;
+  }
+  .carousel-item .row > [class^="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .carousel-inner {
+    padding: 0 1rem;
+    max-height: max-content;
+  }
+  .container{
+    max-height: max-content;
+  }
+
+  .card img {
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+  .contactList li {
+  font-size: 0.95rem;
+  word-break: break-word;
+  }
+  .cvs{
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
 }
