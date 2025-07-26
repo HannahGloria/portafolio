@@ -1,13 +1,25 @@
 body {
   transition: background-color 0.3s, color 0.3s;
 }
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  font-weight: 400;
+  color: #ccc;
+}
+
 .dark-mode body {
   background-color: #212529;
   color: #fff;
 }
-/* .navbar {
-  background-color: rgb(255, 255, 255,0.5) !important;
-} */
 .headerContainer {
   padding-top: 10.5rem;
   background-image: url('../img/home-office-4996834_1280.jpg');
@@ -36,12 +48,12 @@ body {
   padding: 1rem;
 }
 .carousel-inner {
-  min-height: 640px; 
-  max-height: 640px;
+  min-height: 600px; 
+  max-height: 600px;
 }
 
 .carousel-item img {
-  max-height: 440px;
+  max-height: 380px;
   width: auto;
   margin: 0 auto;
   object-fit: contain;
@@ -52,6 +64,19 @@ body {
   width: 7%;
    top: 50%;
   transform: translateY(-50%);
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.card-body a{
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6c63ff;
+  text-decoration: none;
 }
 
 section .carousel .carousel-control-prev {
@@ -82,12 +107,117 @@ p.lead{
   border: 1px solid rgba(0,0,0,0.05);
   min-height: 250px;
 }
+.text-front{
+  color: rgb(120, 105, 255);
+}
+.text-back{
+  color: #198754;
+}
 .diagram-divider {
   width: 4px;
   height: 200px;
   background: linear-gradient(180deg, #0d6efd 0%, #198754 100%);
   border-radius: 2px;
 }
+.cvs{
+  width: 27%;
+  justify-content: space-between;
+}
+.uxuinone{
+  display: none;
+}
+.cvs a.btn-secondary:hover{
+  color: #ffff;
+}
+
+/* Modo claro pastel */
+[data-bs-theme="light"] .lead{
+  /* background: #fb71bd;
+  opacity: 0.8; */
+  color: #fb71bd;
+}
+
+[data-bs-theme="light"] .headerContainer{
+  background-image: url('../img/laptop-2562361_1280.jpg');
+  background-position: bottom;
+}
+.headerContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 33, 33, 0.39); 
+  z-index: 1;
+}
+
+.headerContainer > * {
+  position: relative;
+  z-index: 2;
+}
+[data-bs-theme="light"] .uxuinone{
+  /* display: block;
+  color: #0f7eb5; */
+  display: block;
+  color: #fff;
+  background: #ff95bde0;
+}
+
+[data-bs-theme="light"] h2, h4 {
+  color: #70bcff;
+}
+[data-bs-theme="light"] p {
+  color: #282f35;
+}
+/* [data-bs-theme="light"] .navbar .nav-link,
+[data-bs-theme="light"] .navbar .navbar-brand {
+  color: #333 !important;
+  font-weight: 600;
+} */
+
+/* [data-bs-theme="light"] .headerContainer {
+  background: linear-gradient(135deg, #f9c6d3, #aee6f9, #e3d7f3, #fff3b0);
+  color: #333;
+} */
+
+[data-bs-theme="light"] .card {
+  background-color: #ffffff !important;
+  /* border: 1px solid #ffd6d6;
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3); */
+  color: #333;
+}
+
+[data-bs-theme="light"] .card-title {
+  color: #ff69b4;
+}
+
+[data-bs-theme="light"] .btn-secondary {
+  background-color: #ffb6b6;
+  border: none;
+}
+
+[data-bs-theme="light"] .btn-secondary:hover {
+  background-color: #f984a1;
+  color: #ffff;
+}
+
+
+[data-bs-theme="light"] section {
+  background-color: #fffafc;
+}
+
+[data-bs-theme="light"] footer {
+  background-color: #ffe4e1;
+  color: #333;
+}
+[data-bs-theme="light"]
+.carousel-control-prev,
+.carousel-control-next{
+  background: #f083da;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+
 
 @media (max-width: 767px) {
   .diagram-divider {

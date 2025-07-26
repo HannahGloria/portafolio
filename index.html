@@ -7,6 +7,9 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="assets/js/main.js"></script>
+
   <style>
     [data-bs-theme="dark"] .card {
     background-color: #212529 !important;
@@ -46,8 +49,7 @@
         <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         <li class="nav-item">
-          <!-- <button class="btn btn-sm btn-outline-dark ms-2" onclick="toggleDarkMode()">🌙</button> -->
-          <button id="toggleMode" class="btn btn-sm btn-outline-dark ms-2">🌙</button>
+          <button id="toggleMode" class="btn btn-sm ms-2 m-auto justify-content-center"><span id="modeIcon">☀️</span></button>
         </li>
       </ul>
     </div>
@@ -58,6 +60,7 @@
     <div class="container">
         <h1 class="display-4">Hola, soy Alejandra &lt;/Hannah&gt; Gloria</h1>
         <p class="lead">Desarrolladora <span class="colorWhite">Front-End Jr</span></p>
+        <h4 class="uxuinone">Actualmente profundizando en diseño UI/UX</h4>
     </div>
     <!-- <svg class="header-curve" viewBox="0 0 1440 120" style="width:100%;height:115px;">
     <circle cx="60" cy="110" r="70" fill="#fff"/>
@@ -102,6 +105,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Revistagram</h5>
                   <a href="https://Revistagram.space/" target="_blank">Revistagram.com.mx</a>
+                  <p class="card-text">Sitio web de revista creado con WordPress personalizado, diseño responsive, enfoque en SEO y branding visual.</p>
+
                 </div>
               </div>
             </div>
@@ -111,6 +116,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Arte Decorativo Tlacuache</h5>
                   <a href="https://www.artedecorativotlacuache.com.mx" target="_blank">artedecorativotlacuache.com.mx</a>
+                  <p class="card-text">Sitio web para artista visual tipo galeria con enfoque en diseño atractivo y de tipo exposición de cuadros, similar a un ecommerce pero con un proceso de contacto previo a la venta. Wordpress, Whatsapp integrado.</p>
                 </div>
               </div>
             </div>
@@ -126,6 +132,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Psicología clínica familiar</h5>
                   <a href="https://psicologiaclinicafamiliar.com.mx/" target="_blank">psicologiaclinicafamiliar.com.mx</a>
+                  <p class="card-text">Sitio tipo informativo para consultorio psicologico, incluye un blog y formulario de contacto.</p>
                 </div>
               </div>
             </div>
@@ -144,7 +151,7 @@
                 <img src="assets/img/ipadscool.png" class="card-img-top cardsTabs" alt="S-cool.tech">
                 <div class="card-body">
                   <h5 class="card-title">S-cool.tech</h5>
-                  <p>Creado desde WordPress sin plantillas</p>
+                  <p>Creado desde WordPress sin plantillas, para una escuela de tecnología e inglés.</p>
                   <!-- <a href="#" target="_blank">S-cool.tech</a> -->
                 </div>
               </div>
@@ -170,6 +177,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Cafetería El Deleite del Diablillo</h5>
                   <a href="https://hannahgloria.github.io/cafeteria-el-diablillo" target="_blank">Cafetería El deleite del diablillo</a>
+                  <p class="card-text">Proyecto ficticio creado con HTML, CSS, JavaScript y Bootstrap</p>
                 </div>
               </div>
             </div>
@@ -197,7 +205,7 @@
       <!-- Front-End -->
       <div class="col-md-5">
         <div class="tech-diagram p-4 mb-4 rounded shadow text-center h-100">
-          <h4 class="mb-4 text-primary">Front-End</h4>
+          <h4 class="mb-4 text-front">Front-End</h4>
           <ul class="list-unstyled">
             <li><strong>HTML5</strong></li>
             <li><strong>CSS3</strong>, Flexbox, CSS Grid</li>
@@ -214,7 +222,7 @@
       <!-- Back-End -->
       <div class="col-md-5">
         <div class="tech-diagram p-4 mb-4 rounded shadow text-center h-100">
-          <h4 class="mb-4 text-success">Back-End</h4>
+          <h4 class="mb-4 text-back">Back-End</h4>
           <ul class="list-unstyled">
             <li><strong>C#</strong></li>
             <li><strong>SQL</strong></li>
@@ -232,6 +240,10 @@
     <h2>Contacto</h2>
     <p>¿Quieres saber más sobre mi trabajo, ver mi CV o contratarme? Puedes escribirme a:</p>
     <ul class="contactList">
+      <div class="d-inline-flex cvs">
+        <li><a href="./assets/LeonorRamirez_CV_ES.pdf" class="btn btn-secondary mt-3" target="_blank">Ver CV Español</a></li>
+        <li><a href="./assets/LeonorRamirez_CV_EN.pdf" class="btn btn-secondary mt-3" target="_blank">Ver CV English</a></li>
+      </div>
       <li>Email: ale.jana.gloria@gmail.com: </a></li>
       <li><a href="https://wa.link/fu21oo" target="_blank">Tel: +52 332 836 4509</a></li>
       <li>GitHub: <a href="https://github.com/hannahgloria" target="_blank">@hannahgloria</a></li>
@@ -248,19 +260,7 @@
     }
   </script> -->
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const toggleBtn = document.getElementById('toggleMode');
-      const htmlEl = document.documentElement;
-      // Inicializa el tema claro
-      htmlEl.setAttribute('data-bs-theme', 'dark');
-      toggleBtn.addEventListener('click', () => {
-        const currentTheme = htmlEl.getAttribute('data-bs-theme');
-        htmlEl.setAttribute('data-bs-theme', currentTheme === 'dark' ? 'light' : 'dark');
-      });
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 </html>
