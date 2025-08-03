@@ -15,6 +15,9 @@ p {
   font-weight: 400;
   color: #ccc;
 }
+.text-pink {
+  color: #f083da !important;
+}
 
 .dark-mode body {
   background-color: #212529;
